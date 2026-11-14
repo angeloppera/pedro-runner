@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- CUSTOMIZATION AND ADJUSTMENT: Change the browser tab title here. -->
+    <title>Pedro Penduko: Aswang Chronicles</title>
+
+    <!-- Responsive viewport settings -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Help Pedro Penduko survive the darkness! Run, jump, and escape terrifying supernatural creatures in this Filipino-inspired endless runner game.">
+
+    <!-- CUSTOMIZATION AND ADJUSTMENT: Change the Open Graph title here. -->
+    <meta property="og:title" content="Pedro Penduko: Aswang Chronicles">
+
+    <!-- CUSTOMIZATION AND ADJUSTMENT: Change the Open Graph description here. -->
+    <meta property="og:description"
+        content="Enter a nightmare-filled jungle and help Pedro Penduko escape the terrifying Aswang and other supernatural creatures!">
+
+    <meta property="og:type" content="website">
+
+    <!-- CUSTOMIZATION AND ADJUSTMENT: Replace with your public game URL. -->
+    <meta property="og:url" content="https://yourdomain.com/pedro-penduko">
+
+    <!-- CUSTOMIZATION AND ADJUSTMENT: Replace with your public preview image URL. -->
+    <meta property="og:image" content="https://yourdomain.com/images/game-preview.png">
+    
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="game-container">
+
+        <!-- GAME HEADER -->
+        <header class="game-header">
+
+            <!-- CUSTOMIZATION AND ADJUSTMENT: Change the main displayed game title here. -->
+            <h1 id="gameTitle">
+                Pedro Penduko: Aswang Chronicles
+            </h1>
+
+            <!-- CUSTOMIZATION AND ADJUSTMENT: Change the game description here. -->
+            <p id="gameDescription">
+                Deep inside a cursed Philippine jungle, darkness is alive.
+                Help Pedro Penduko escape the terrifying Aswang, Dracula,
+                and other supernatural creatures lurking in the shadows.
+                Run as far as you can and survive the nightmare!
+            </p>
+
+        </header>
+
+
+        <!-- GAME SCOREBOARD -->
+        <section class="scoreboard" aria-label="Game scores">
+
+            <div class="score-item">
+                <span class="score-label">CURRENT SCORE</span>
+                <span id="scoreDisplay" aria-live="off">0</span>
+            </div>
+
+            <div class="score-item">
+                <span class="score-label">HIGH SCORE</span>
+                <span id="highScoreDisplay">0</span>
+            </div>
+
+        </section>
+
+
+        <!-- GAME CANVAS AND OVERLAY -->
+        <section class="game-area" aria-label="Game area">
+
+            <!--
+                Canvas logical resolution:
+                Width: 960 pixels
+                Height: 450 pixels
+
+                JavaScript will draw the player, monsters,
+                obstacles, bats, moon, and jungle background.
+            -->
+            <canvas id="gameCanvas" width="960" height="450" aria-label="Pedro Penduko endless runner game">
+                Your browser does not support HTML5 Canvas.
+            </canvas>
+
+
+            <!-- GAME OVER / START OVERLAY -->
+            <div id="gameOverlay" class="game-overlay">
+
+                <!-- CUSTOMIZATION AND ADJUSTMENT: Change the Game Over heading here. -->
+                <h2 id="overlayTitle">
+                    Pedro Penduko: Aswang Chronicles
+                </h2>
+
+                <!-- CUSTOMIZATION AND ADJUSTMENT: Change the Game Over message here. -->
+                <p id="overlayMessage">
+                    The jungle awaits, and the creatures are hunting!
+                    Help Pedro survive the night.
+                </p>
+
+                <!-- START / RESTART BUTTON -->
+                <!-- CUSTOMIZATION AND ADJUSTMENT: Change the button labels here. -->
+                <button id="startButton" type="button" data-start-text="Start Game" data-restart-text="Restart Game">
+                    Start Game
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- GAMEPLAY INSTRUCTIONS -->
+        <section class="instructions">
+
+            <h2>How to Play</h2>
+
+            <!-- CUSTOMIZATION AND ADJUSTMENT: Change the gameplay instructions here. -->
+            <p id="gameInstructions">
+                Help Pedro escape the supernatural creatures!
+
+                <br>
+                <strong>SPACE</strong> or
+                <strong>ARROW UP</strong> – Jump over obstacles.
+
+                <br>
+                <strong>CLICK</strong> or
+                <strong>TAP</strong> – Jump on mobile devices.
+
+                <br>
+                Avoid the Aswang and Dracula.
+                Survive as long as possible to achieve a new high score!
+            </p>
+
+        </section>
+
+
+        <!-- ASSET STATUS -->
+        <footer class="game-footer">
+
+            <p id="assetStatus" aria-live="polite">
+                Preparing the jungle...
+            </p>
+
+            <p>
+                A Filipino-inspired supernatural endless runner game.
+            </p>
+
+        </footer>
+
+    </main>
+    
+
+    <!-- External JavaScript file -->
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>
